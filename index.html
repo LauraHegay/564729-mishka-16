@@ -13,12 +13,12 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li><a class="site-list__item" href="">Каталог товаров</a></li>
-            <li><a class="site-list__item" href="">Вязание на заказ</a></li>
+            <li><a class="site-list__item" href="#">Каталог товаров</a></li>
+            <li><a class="site-list__item" href="#">Вязание на заказ</a></li>
           </ul>
           <ul class="main-nav__list user-list">
             <li><a class="user-list__item" href="">Поиск по сайту</a></li>
-            <li><a class="user-list__item" href="">Корзина: пока пуста</a></li>
+            <li><a class="user-list__item" href="#">Корзина: пока пуста</a></li>
           </ul>
         </div>
       </nav>
@@ -27,8 +27,8 @@
       <h1 class="page-title">Милые штуки ручной работы</h1>
       <section class="popular-product">
         <ul class="popular-product__list">
-          <li><a class="popular-product__item" href="">Предметы интерьера</a></li>
-          <li><a class="popular-product__item" href="">Детские игрушки</a></li>
+          <li><a class="popular-product__item" href="#">Предметы интерьера</a></li>
+          <li><a class="popular-product__item" href="#">Детские игрушки</a></li>
         </ul>
       </section>
       <section class="week-product">
@@ -37,7 +37,7 @@
           <p class="week-product__value">Товар недели</p>
         </header>
         <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="characteristic__list">
+        <table class="week-product__characteristic characteristic">
           <tr>
             <td class="characteristic__title">Цвет:</td>
             <td class="characteristic__value">«Тиффани»/серый</td>
@@ -45,39 +45,38 @@
           <tr>
             <td class="characteristic__title">Диаметр:</td>
             <td class="characteristic__value">25 см</td>
-            <td></td>
           </tr>
           <tr>
-            <td class="characteristi__title">Высота:</td>
+            <td class="characteristic__title">Высота:</td>
             <td class="characteristic__value">15 см</td>
           </tr>
         </table>
         <div class="week-product__image">
-          <img src="" alt="Вязанные корзинки" width="260" height="315">
+          <img src="http://placehold.it/260x315" alt="Вязанные корзинки" width="260" height="315">
         </div>
         <p class="week-product__price">Цена: 990 руб.</p>
-        <a class="week-product__order button" href="">Заказать</a>
+        <a class="week-product__order button" href="#">Заказать</a>
       </section>
       <section class="about-us">
         <h2 class="about-us__title">Коротко о нас:</h2>
         <ul class="about-us__list">
           <li class="about-us__item about-us__item--flower">
-            <p class="about-us__description">Экологически чистые материалы</p>
+            Экологически чистые материалы
           </li>
           <li class="about-us__item about-us__item--money">
-            <p>Скандинавский стиль по российской цене</p>
+            Скандинавский стиль по российской цене
           </li>
           <li class="about-us__item about-us__item--heart">
-            <p class="about-us__description">Увеличивает лайки на фотографиях</p>
+            Увеличивает лайки на фотографиях
           </li>
           <li class="about-us__item about-us__item--knitting">
-            <p class="about-us__description">Связано вручную с любовью и умилением</p>
+            Связано вручную с любовью и умилением
           </li>
           <li class="about-us__item about-us__item--rocket">
-            <p class="about-us__description">Поддержка отечественного производителя</p>
+            Поддержка отечественного производителя
           </li>
           <li class="about-us__item about-us__item--present">
-            <p class="about-us__description">Поставляется в подарочной упаковке</p>
+            Поставляется в подарочной упаковке
           </li>
         </ul>
       </section>
@@ -91,25 +90,27 @@
               <p class="review__author-nik">@misssssiskras</p>
             </li>
           </ul>
-          <p class="reviews__toggles slider__toggles">
+          <p class="review__toggles slider__toggles">
             <button class="slider__prev" type="button">Назад</button>
             <button class="slider__next" type="button">Вперед</button>
           </p>
-          <a class="week-product__write button" href="#">Написать</a>
+          <a class="slider__write button" href="#">Написать</a>
         </div>
       </section>
       <section class="contacts">
         <h2 class="contacts__title">Контакты</h2>
-        <div class="contacts__email email">
-          <p class="email__title">e-mail:</p>
-          <p class="email__value">info@mimimishkashop.ru</p>
-        </div>
-        <div class="contacts__address address">
-          <p class="address__title">адрес:</p>
-          <p class="address__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
-          <p class="address__map">
-            <img class="address__map__image" src="img/map-mobile.jpg" width="320" height="457" alt="Схема проезда»">
-          </p>
+        <table class="contacts__list">
+          <tr class="contacts__item email">
+            <td class="email__title">e-mail:</td>
+            <td class="email__value">info@mimimishkashop.ru</td>
+          </tr>
+          <tr class="contacts__item address">
+            <td class="address__title">адрес:</td>
+            <td class="address__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+          </tr>
+        </table>
+        <div class="contacts__map map">
+          <img class="map__image" src="img/map-mobile.jpg" width="320" height="457" alt="Схема проезда»">
         </div>
         <a class="contacts__write-us button" href="#">Напишите нам</a>
       </section>
@@ -125,7 +126,7 @@
         </div>
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__link">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" >
             <img class="copyright__link__logo-image" src="img/htmlacademy.svg" width="27" height="34" alt="HTML Academy">
           </a>
         </div>
