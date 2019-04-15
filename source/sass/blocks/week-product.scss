@@ -1,15 +1,15 @@
 .week-product__title {
-  @include font($size: 25px, $line-height: 30px, $color: rgba(0,0,0,1),  $weight: 700);
+  @include font(25px, 30px, 700, $black);
 }
 
 .week-product__value {
   display: block;
 
-  @include font($size: 17px, $line-height: 20px, $color: #63d1bb,  $weight: 700);
+  @include font(17px, 20px, 700, $color-third);
 
   text-transform: uppercase;
 
-  background-color: #ffffff;
+  background-color: $color-main;
 }
 
 .week-product__characteristic {

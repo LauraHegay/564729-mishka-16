@@ -1,2 +1,16 @@
-$fon-color: #ffffff;
-$for-debag: 2px solid green;
+$color-main: #ffffff; //основной цвет
+$color-main-dark: rgba(255, 255, 255, 0.3);
+$color-secondary: #f1f1f1; //дополнительный цвет
+$color-third: #63d1bb; //второй дополнительный цвет
+$color-third-light: #59d5bc;
+$color-third-dark: #56c3b2;
+$color-third-darken: #46c1ae;
+
+$black: #000000;
+$gray-darken: rgba(0, 0, 0, 0.6);
+$gray-dark: rgba(0, 0, 0, 0.3);
+$gray-light: rgba(68, 68, 68, 0.3);
+$gray: #444444;
+
+
+$for-debug: 2px solid green; //временно

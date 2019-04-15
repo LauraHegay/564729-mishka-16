@@ -5,33 +5,33 @@
 .popular-product__item {
   display: inline-block;
 
-  @include font($size: 20px, $line-height:30px, $color: rgba(255, 255, 255, 1),  $weight: 700);
+  @include font($size: 20px, $line-height:30px, $color: $color-main,  $weight: 700);
 
   text-decoration: none;
 
-  background-color: #63d1bb;
+  background-color: $color-third;
 
   &:hover {
-    background-color: #59d5bc;
+    background-color: $color-third-light;
   }
 
   &:focus,
   &:active {
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #59d5bc;
+    color: $color-main-dark;
+    background-color: $color-third-light;
   }
 
   &--darker-color {
-    background-color: #56c3b2;
+    background-color: $color-third-dark;
 
     &:hover {
-      background-color: #46c1ae;
+      background-color: $color-third-darken;
     }
 
     &:focus,
     &:active {
-      color: rgba(255, 255, 255, 0.3);
-      background-color: #46c1ae;
+      color: $color-main-dark;
+      background-color: $color-third-darken;
     }
   }
 }

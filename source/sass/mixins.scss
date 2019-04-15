@@ -1,4 +1,4 @@
-@mixin font($family: "Open Sans", $size: 15px, $line-height: 24px, $weight: 400, $color: #444444) {
+@mixin font($size: 15px, $line-height: 24px, $weight: 400, $color: $gray, $family: "Open Sans") {
   font-family: $family, "Arial", sans-serif;
   font-size: $size;
   line-height: $line-height;

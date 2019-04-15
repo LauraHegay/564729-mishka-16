@@ -1,6 +1,7 @@
 @import "normalize.scss";
 @import "variables.scss";
 @import "mixins.scss";
+@import "general.scss";
 @import "blocks/button.scss";
 @import "blocks/page-header.scss";
 @import "blocks/page-title.scss";
@@ -19,33 +20,3 @@
 @import "blocks/how-it-made.scss";
 @import "blocks/fieldset.scss";
 
-body {
-  min-width: 320px;
-  margin: 0;
-  padding: 0;
-
-  @include font();
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.visually-hidden,
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  white-space: nowrap;
-
-  border: 0;
-
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}

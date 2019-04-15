@@ -1,12 +1,12 @@
 .about-us__title {
-  @include font($size: 25px, $line-height: 30px, $color: rgba(0,0,0,1),  $weight: 700);
+  @include font($size: 25px, $line-height: 30px, $color: $black,  $weight: 700);
 }
 
 .about-us__list {
   font-weight: 700;
-  color: #000000;
+  color: $black;
 
   list-style: none;
 
-  background-color: #ffffff;
+  background-color: $color-main;
 }

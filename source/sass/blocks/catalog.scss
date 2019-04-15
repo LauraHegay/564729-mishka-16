@@ -1,12 +1,12 @@
-.catalog-list {
+.catalog__list {
   list-style: none;
 }
 
-.catalog-item__link {
-  @include font($weight: 700, $color: #000000);
+.catalog__item__link {
+  @include font($weight: 700, $color: $black);
   text-decoration: none;
 
-  background-color: #ffffff;
+  background-color: $color-main;
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);

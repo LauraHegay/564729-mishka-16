@@ -1,13 +1,13 @@
 .user-list__item {
-  @include font($size: 17px, $color: #000000,  $weight: 700);
+  @include font($size: 17px, $color: $black,  $weight: 700);
   text-decoration: none;
 
   &:hover {
-    color: rgba(0, 0, 0, 0.6);
+    color: $gray-darken;
   }
 
   &:focus,
   &:active {
-    color: rgba(0, 0, 0, 0.3);
+    color: $gray-dark;
   }
 }

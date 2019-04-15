@@ -9,20 +9,20 @@
   text-decoration: none;
   text-align: center;
 
-  background-color: #ffffff;
+  background-color: $color-main;
 
-  border: 2px solid #444444;
+  border: 2px solid $gray;
 
   &:hover {
-    color: #ffffff;
+    color: $color-main;
 
-    background-color: #444444;
+    background-color: $gray;
   }
 
   &:focus,
   &active {
     color: rgba(255, 255, 255, 0.3);
 
-    background-color: #444444;
+    background-color: $gray;
   }
 }

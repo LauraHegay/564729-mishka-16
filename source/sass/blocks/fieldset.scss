@@ -5,7 +5,7 @@
 .fieldset__legend {
   position: relative;
 
-  @include font($size: 17px, $line-height: 16px, $weight: 700, $color: #63d1bb);
+  @include font(17px, 16px, 700, $color-third);
   text-transform: uppercase;
 
   &::after {
@@ -18,7 +18,7 @@
     width: 200px;
     height: 1px;
 
-    background-color: #63d1bb;
+    background-color: $color-third;
   }
 }
 
@@ -30,7 +30,7 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
-  color: #000000;
+  color: $black;
 }
 
 .fieldset__input,
@@ -40,36 +40,36 @@
   font: inherit;
   font-size: 17px;
   line-height: 18px;
-  color: rgba(68, 68, 68, 0.3);
+  color: $gray-light;
 
   border: none;
-  border-bottom: 2px solid #000000;
-  background-color: #ffffff;
+  border-bottom: 2px solid $black;
+  background-color: $color-main;
   outline: none;
 
   &:hover {
-    border-bottom: 2px solid #62d1ba;
+    border-bottom: 2px solid $color-third;
   }
 
   &:focus,
   &:active {
-    color: rgba(68, 68, 68, 1);
+    color: $gray;
 
-    border-bottom: 2px solid #62d1ba;
+    border-bottom: 2px solid $color-third;
   }
 }
 
 .fieldset__textarea {
-  border: 2px solid #444444;
+  border: 2px solid $gray;
 
   &:hover {
-    border: 2px solid #62d1ba;
+    border: 2px solid $color-third;
   }
 
   &:focus,
   &:active {
-    color: rgba(68, 68, 68, 1);
+    color: $gray;
 
-    border: 2px solid #62d1ba;
+    border: 2px solid $color-third;
   }
 }

@@ -1,10 +1,10 @@
 .page-title {
-  @include font($size: 27px, $line-height: 30px, $color: rgba(0,0,0,1),  $weight: 700);
+  @include font($size: 27px, $line-height: 30px, $color: $black,  $weight: 700);
   text-align: center;
 }
 
-.page-title--grey-fon {
-  background-color: #f1f1f1;
+.page-title--grey-background {
+  background-color: $color-secondary;
 }
 
 .catalog-item__characters {
@@ -14,5 +14,5 @@
 
 .catalog-item__price {
   font-weight: 700;
-  color: #000000;
+  color: $black;
 }
