@@ -1,0 +1,19 @@
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item__link {
+  @include font($weight: 700, $color: #000000);
+  text-decoration: none;
+
+  background-color: #ffffff;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:focus,
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}

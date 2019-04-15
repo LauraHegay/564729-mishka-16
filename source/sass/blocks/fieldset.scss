@@ -1,0 +1,75 @@
+.fieldset {
+  border: none;
+}
+
+.fieldset__legend {
+  position: relative;
+
+  @include font($size: 17px, $line-height: 16px, $weight: 700, $color: #63d1bb);
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    left: 62px;
+
+    width: 200px;
+    height: 1px;
+
+    background-color: #63d1bb;
+  }
+}
+
+.fieldset__list {
+  list-style: none;
+}
+
+.fieldset__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.fieldset__input,
+.fieldset__textarea {
+  width: 260px;
+
+  font: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  color: rgba(68, 68, 68, 0.3);
+
+  border: none;
+  border-bottom: 2px solid #000000;
+  background-color: #ffffff;
+  outline: none;
+
+  &:hover {
+    border-bottom: 2px solid #62d1ba;
+  }
+
+  &:focus,
+  &:active {
+    color: rgba(68, 68, 68, 1);
+
+    border-bottom: 2px solid #62d1ba;
+  }
+}
+
+.fieldset__textarea {
+  border: 2px solid #444444;
+
+  &:hover {
+    border: 2px solid #62d1ba;
+  }
+
+  &:focus,
+  &:active {
+    color: rgba(68, 68, 68, 1);
+
+    border: 2px solid #62d1ba;
+  }
+}

@@ -1,0 +1,37 @@
+.popular-product__list {
+  list-style: none;
+}
+
+.popular-product__item {
+  display: inline-block;
+
+  @include font($size: 20px, $line-height:30px, $color: rgba(255, 255, 255, 1),  $weight: 700);
+
+  text-decoration: none;
+
+  background-color: #63d1bb;
+
+  &:hover {
+    background-color: #59d5bc;
+  }
+
+  &:focus,
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #59d5bc;
+  }
+
+  &--darker-color {
+    background-color: #56c3b2;
+
+    &:hover {
+      background-color: #46c1ae;
+    }
+
+    &:focus,
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: #46c1ae;
+    }
+  }
+}

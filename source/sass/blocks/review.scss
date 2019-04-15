@@ -1,0 +1,47 @@
+.review__title {
+  @include font($size: 25px, $line-height: 30px, $color: rgba(0,0,0,1),  $weight: 700);
+}
+
+.review__list {
+  line-height: 30px;
+
+  list-style: none;
+}
+
+.review__author-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.review__author-nik {
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+
+  line-height: 30px;
+}
+
+.contacts__item {
+  margin: 0;
+  padding: 0;
+  width: 260px;
+}
+
+.email__title,
+.address__title {
+  margin: 0;
+  padding: 0;
+  width: 70px;
+}
+
+.email__value,
+.address__value {
+  margin: 0;
+  padding: 0;
+  width: 190px;
+}

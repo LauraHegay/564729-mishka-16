@@ -1,0 +1,13 @@
+.site-list__item {
+  @include font($size: 17px, $color: rgba(0,0,0,1),  $weight: 700);
+  text-decoration: none;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:focus,
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}

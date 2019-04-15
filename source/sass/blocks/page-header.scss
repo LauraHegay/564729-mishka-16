@@ -1,0 +1,14 @@
+.page-header {
+  @include font();
+}
+
+.page-header__logo-image {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
