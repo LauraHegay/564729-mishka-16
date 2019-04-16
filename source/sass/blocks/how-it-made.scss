@@ -1,0 +1,7 @@
+.how-it-made__title {
+  @include font($size: 17px, $weight: 700, $color: $black);
+}
+
+.how-it-made__intro {
+  font-size: 13px;
+}

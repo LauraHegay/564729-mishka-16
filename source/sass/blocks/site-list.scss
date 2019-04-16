@@ -1,0 +1,13 @@
+.site-list__item {
+  @include font($size: 17px, $color: $black,  $weight: 700);
+  text-decoration: none;
+
+  &:hover {
+    color: $gray-darken;
+  }
+
+  &:focus,
+  &:active {
+    color: $gray-dark;
+  }
+}

@@ -1,0 +1,75 @@
+.fieldset {
+  border: none;
+}
+
+.fieldset__legend {
+  position: relative;
+
+  @include font(17px, 16px, 700, $color-third);
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    left: 62px;
+
+    width: 200px;
+    height: 1px;
+
+    background-color: $color-third;
+  }
+}
+
+.fieldset__list {
+  list-style: none;
+}
+
+.fieldset__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $black;
+}
+
+.fieldset__input,
+.fieldset__textarea {
+  width: 260px;
+
+  font: inherit;
+  font-size: 17px;
+  line-height: 18px;
+  color: $gray-light;
+
+  border: none;
+  border-bottom: 2px solid $black;
+  background-color: $color-main;
+  outline: none;
+
+  &:hover {
+    border-bottom: 2px solid $color-third;
+  }
+
+  &:focus,
+  &:active {
+    color: $gray;
+
+    border-bottom: 2px solid $color-third;
+  }
+}
+
+.fieldset__textarea {
+  border: 2px solid $gray;
+
+  &:hover {
+    border: 2px solid $color-third;
+  }
+
+  &:focus,
+  &:active {
+    color: $gray;
+
+    border: 2px solid $color-third;
+  }
+}
