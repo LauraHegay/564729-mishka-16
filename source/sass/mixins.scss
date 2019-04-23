@@ -5,3 +5,17 @@
   font-weight: $weight;
   color: $color;
 }
+
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+//блок фиксированной ширины расположенный по центру
+@mixin fix-width-center ($width: 320px) {
+  width: $width;
+  margin: 0 auto;
+}
+

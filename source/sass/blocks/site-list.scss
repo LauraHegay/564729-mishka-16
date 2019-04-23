@@ -1,5 +1,14 @@
 .site-list__item {
+  border-bottom: 1px solid $color-secondary;
+}
+
+.site-list__item a {
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   @include font($size: 17px, $color: $black,  $weight: 700);
+
   text-decoration: none;
 
   &:hover {
@@ -9,5 +18,31 @@
   &:focus,
   &:active {
     color: $gray-dark;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+  }
+
+  .site-list__item {
+    padding-right: 37px;
+
+    border: none;
+  }
+
+  .site-list__item a {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    background-color: $color-main;
+  }
+  
+  .site-list__item a {
+    font-size: 17px;
   }
 }

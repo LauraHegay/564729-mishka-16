@@ -1,11 +1,15 @@
+.review {
+  @include fix-width-center ($width: 260px);
+}
+
 .review__title {
   @include font($size: 25px, $line-height: 30px, $color: $black,  $weight: 700);
 }
 
 .review__list {
-  line-height: 30px;
+  @include list-reset ();
 
-  list-style: none;
+  line-height: 30px;
 }
 
 .review__author-name {

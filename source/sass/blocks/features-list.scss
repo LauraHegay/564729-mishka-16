@@ -1,0 +1,9 @@
+.features-list {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .features-list {
+    display: block;
+  }
+}

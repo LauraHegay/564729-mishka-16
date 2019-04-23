@@ -1,3 +1,7 @@
+.week-product {
+  @include fix-width-center ($width: 260px);
+}
+
 .week-product__title {
   @include font(25px, 30px, 700, $black);
 }
@@ -19,4 +23,15 @@
 .week-product__price {
   font-size: 17px;
   font-weight: 700;
+}
+
+@media (min-width: $tablet-width) {
+  .week-product {
+    @include fix-width-center(668px);
+  }
+
+  .week-product__header {
+    display: flex;
+    justify-content: space-between;
+  }
 }

@@ -1,3 +1,12 @@
+.contacts {
+  @include fix-width-center();
+}
+
+.contacts__wrapper,
+.contacts__write-us {
+  @include fix-width-center(260px);
+}
+
 .contacts__title {
   @include font($size: 18px, $line-height: 30px, $color: $black,  $weight: 700);
 }
@@ -9,8 +18,21 @@
   line-height: 30px;
 }
 
-.contacts__item {
-  margin: 0;
-  padding: 0;
-  width: 260px;
+@media (min-width: $tablet-width) {
+  .contacts {
+    @include fix-width-center(768px);
+  }
+
+  .contacts__wrapper {
+    @include fix-width-center(668px);
+  }
+
+  .contacts__list tbody {
+    display: flex;
+    width: 668px;
+  }
+
+  .contacts__item {
+    width: 334px;
+  }
 }

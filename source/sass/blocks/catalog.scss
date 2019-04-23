@@ -17,3 +17,13 @@
     color: rgba(0, 0, 0, 0.3);
   }
 }
+
+.catalog-item__characters {
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.catalog-item__price {
+  font-weight: 700;
+  color: $black;
+}

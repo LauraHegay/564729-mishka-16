@@ -1,5 +1,14 @@
 .user-list__item {
+  border-bottom: 1px solid $color-secondary;
+}
+
+.user-list__item a {
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   @include font($size: 17px, $color: $black,  $weight: 700);
+
   text-decoration: none;
 
   &:hover {
@@ -9,5 +18,21 @@
   &:focus,
   &:active {
     color: $gray-dark;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    display: flex;
+  }
+
+  .user-list__item .user-list__search {
+    display: block;
+    width: 84px;
+    font-size: 0;
+  }
+
+  .user-list__item {
+    border-bottom: none;
   }
 }
