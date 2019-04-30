@@ -1,0 +1,20 @@
+.facilities-list {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .facilities-list {
+    display: flex;
+    order: 3;
+    width: 525px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .facilities-list a {
+    display: flex;
+
+    @include font($size: 15px, $color: $black,  $weight: 700);
+    text-decoration: none;
+  }
+}

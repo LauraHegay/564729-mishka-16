@@ -1,3 +1,7 @@
+.site-list {
+  order: 2;
+}
+
 .site-list__item {
   border-bottom: 1px solid $color-secondary;
 }
@@ -24,10 +28,12 @@
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
+    order: 2;
+    width: 334px;
   }
 
   .site-list__item {
-    padding-right: 37px;
+    padding-right: 33px;
 
     border: none;
   }
@@ -38,10 +44,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .site-list {
+    display: flex;
+    order: 1;
+    width: 400px;
+  }
+
   .site-list__item {
     background-color: $color-main;
   }
-  
+
   .site-list__item a {
     font-size: 17px;
   }

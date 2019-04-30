@@ -1,0 +1,15 @@
+.form {
+  @include fix-width-center(260px);
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    width: 668px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: 1050px;
+  }
+}

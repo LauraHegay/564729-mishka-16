@@ -29,3 +29,9 @@
     width: 334px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    @include fix-width-center ($width: 700px);
+  }
+}

@@ -36,3 +36,38 @@
     width: 334px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    @include fix-width-center(1150px);
+  }
+
+  .contacts__wrapper {
+    position: relative;
+
+    @include fix-width-center(1050px);
+    min-height: 450px;
+  }
+
+  .contacts__list tbody {
+    display: block;
+    width: 350px;
+  }
+
+  .contacts__write-us.button {
+    margin: 0;
+  }
+
+  .contacts__map {
+    position: absolute;
+    top: -20px;
+    left: 525px;
+
+    width: 525px;
+  }
+
+  .contacts__map img {
+    width: 525px;
+    height: 457px;
+  }
+}

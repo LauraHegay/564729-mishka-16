@@ -18,10 +18,17 @@
 .page-title h1 {
   margin: 0;
   padding: 0;
+
   @include font($size: 27px, $line-height: 30px, $color: $black,  $weight: 700);
 }
 
-.page-title--grey-background {
+.page-title.page-title--grey-background {
+  min-height: 110px;
+  margin: 0;
+  padding: 0;
+  padding-top: 70px;
+
+  background-image: none;
   background-color: $color-secondary;
 }
 
@@ -41,10 +48,18 @@
     font-size: 43px;
     line-height: 50px;
   }
+
+  .page-title.page-title--grey-background {
+    min-height: 226px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-title {
     background-image: url("../img/hero-desktop@1x.jpg");
+  }
+
+  .page-title.page-title--grey-background {
+    min-height: 258px;
   }
 }

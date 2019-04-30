@@ -12,30 +12,24 @@
       <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
-          <div class="main-nav__column1">
-            <div class="main-nav__inner-wrapper">
-              <a class="main-nav__logo">
-                  <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
-                </a>
-              <ul class="main-nav__list site-list">
-                <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
-                <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
-              </ul>
-            </div>
-            <ul class="main-nav__list facilities-list">
-              <li class="facilities-list__item"><a class="facilities-list__new-products" href="#">Новые поступления</a></li>
-              <li class="facilities-list__item"><a class="facilities-list__sale" href="#">Распродажа</a></li>
-            </ul>
-          </div>
-          <div class="main-nav__column2">
-            <ul class="main-nav__list user-list">
-              <li class="user-list__item"><a class="user-list__search" href="#">Поиск по сайту</a></li>
-              <li class="user-list__item"><a href="#">Корзина: пока пуста</a></li>
-            </ul>
-            <ul class="main-nav__list features-list">
-              <li class="features-list__item"><a href="#">Бесплатная доставка по России</a></li>
-            </ul>
-          </div>
+          <a class="main-nav__logo">
+            <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+          </a>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item"><a class="user-list__search" href="#">Поиск по сайту</a></li>
+            <li class="user-list__item"><a href="#">Корзина: пока пуста</a></li>
+          </ul>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
+            <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
+          </ul>
+          <ul class="main-nav__list facilities-list">
+            <li class="facilities-list__item"><a class="facilities-list__new-products" href="#">Новые поступления</a></li>
+            <li class="facilities-list__item"><a class="facilities-list__sale" href="#">Распродажа</a></li>
+          </ul>
+          <p class="main-nav__features">
+            <a href="#">Бесплатная доставка по России</a>
+          </p>
         </div>
       </nav>
     </header>
@@ -54,26 +48,28 @@
           <h2 class="week-product__title">Вязанные корзинки</h2>
           <p class="week-product__value">Товар недели</p>
         </header>
-        <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="week-product__characteristic characteristic">
-          <tr>
-            <td class="characteristic__title">Цвет:</td>
-            <td class="characteristic__value">«Тиффани»/серый</td>
-          </tr>
-          <tr>
-            <td class="characteristic__title">Диаметр:</td>
-            <td class="characteristic__value">25 см</td>
-          </tr>
-          <tr>
-            <td class="characteristic__title">Высота:</td>
-            <td class="characteristic__value">15 см</td>
-          </tr>
-        </table>
-        <div class="week-product__image">
-          <img src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки" width="260" height="315">
+        <div class="week-product__wrapper">
+          <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="week-product__characteristic characteristic">
+            <tr>
+              <td class="characteristic__title">Цвет:</td>
+              <td class="characteristic__value">«Тиффани»/серый</td>
+            </tr>
+            <tr>
+              <td class="characteristic__title">Диаметр:</td>
+              <td class="characteristic__value">25 см</td>
+            </tr>
+            <tr>
+              <td class="characteristic__title">Высота:</td>
+              <td class="characteristic__value">15 см</td>
+            </tr>
+          </table>
+          <div class="week-product__image">
+            <img src="img/triple-set-mobile@1x.jpg" alt="Вязанные корзинки" width="260" height="315">
+          </div>
+          <p class="week-product__price">Цена: 990 руб.</p>
+          <a class="week-product__order button" href="#">Заказать</a>
         </div>
-        <p class="week-product__price">Цена: 990 руб.</p>
-        <a class="week-product__order button" href="#">Заказать</a>
       </section>
       <section class="about-us">
         <h2 class="about-us__title">Коротко о нас:</h2>
@@ -128,11 +124,11 @@
               <td class="address__value">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
             </tr>
           </table>
+          <div class="contacts__map map">
+            <img class="map__image" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Схема проезда»">
+          </div>
+          <a class="contacts__write-us button" href="#">Напишите нам</a>
         </div>
-        <div class="contacts__map map">
-          <img class="map__image" src="img/map-mobile@1x.jpg" width="322" height="457" alt="Схема проезда»">
-        </div>
-        <a class="contacts__write-us button" href="#">Напишите нам</a>
       </section>
     </main>
     <footer class="page-footer">

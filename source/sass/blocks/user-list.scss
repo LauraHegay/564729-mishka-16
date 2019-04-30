@@ -1,3 +1,7 @@
+.user-list {
+  order: 3;
+}
+
 .user-list__item {
   border-bottom: 1px solid $color-secondary;
 }
@@ -24,6 +28,9 @@
 @media (min-width: $tablet-width) {
   .user-list {
     display: flex;
+    justify-content: flex-end;
+    order: 2;
+    width: 350px;
   }
 
   .user-list__item .user-list__search {
@@ -34,5 +41,12 @@
 
   .user-list__item {
     border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    order: 3;
+    width: 400px;
   }
 }

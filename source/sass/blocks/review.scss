@@ -22,3 +22,43 @@
   font-size: 17px;
   line-height: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .review {
+    @include fix-width-center ($width: 668px);
+  }
+
+  .review__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .review__title {
+    order: 1;
+    width: 488px;
+  }
+
+  .review__list {
+    order: 3;
+  }
+
+  .slider__write .button {
+    order: 2;
+    width: 175px;
+  }
+
+  .review__toggles {
+    order: 4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    @include fix-width-center ($width: 1050px);
+  }
+
+  .review__title {
+    order: 1;
+    width: 700px;
+  }
+}

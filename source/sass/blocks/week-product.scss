@@ -27,11 +27,48 @@
 
 @media (min-width: $tablet-width) {
   .week-product {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
     @include fix-width-center(668px);
   }
 
   .week-product__header {
     display: flex;
     justify-content: space-between;
+  }
+
+  .week-product__wrapper {
+    width: 334px;
+
+    //временно
+    min-height: 400px;
+  }
+
+  .week-product__image {
+    position: absolute;
+    left: 408px;
+    top: 92px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .week-product {
+    @include fix-width-center ($width: 1050px);
+  }
+
+  .week-product__header {
+    position: absolute;
+    flex-direction: row-reverse;
+  }
+
+  .week-product__value {
+    width: 175px;
+  }
+
+  .week-product__title {
+    width: 525px;
   }
 }

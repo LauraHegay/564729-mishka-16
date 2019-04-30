@@ -3,11 +3,39 @@
 }
 
 .page-main__intro {
+  @include fix-width-center(260px);
+
   font-size: 13px;
+}
+
+.page-main__catalog {
+  @include fix-width-center(260px);
 }
 
 @media (min-width: $tablet-width) {
   .page-main {
     @include fix-width-center(768px);
+  }
+
+  .page-main__catalog {
+    @include fix-width-center(668px);
+  }
+
+  .page-main__intro {
+    @include fix-width-center(668px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main {
+    @include fix-width-center(1150px);
+  }
+
+  .page-main__catalog {
+    @include fix-width-center(1050px);
+  }
+
+  .page-main__intro {
+    @include fix-width-center(700px);
   }
 }

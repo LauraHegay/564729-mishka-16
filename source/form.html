@@ -9,20 +9,27 @@
 </head>
 <body>
 <header class="page-header">
-  <a class="page-header__logo" href="index.html">
-    <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
-  </a>
+  <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
   <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
     <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li><a class="site-list__item" href="catalog.html">Каталог товаров</a></li>
-        <li><a class="site-list__item" href="form.html">Вязание на заказ</a></li>
-      </ul>
+      <a class="main-nav__logo">
+        <img class="main-nav__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+      </a>
       <ul class="main-nav__list user-list">
-        <li><a class="user-list__item user-list__item--search" href="#">Поиск по сайту</a></li>
-        <li><a class="user-list__item user-list__item--card" href="#">Корзина: пока пуста</a></li>
+        <li class="user-list__item"><a class="user-list__search" href="#">Поиск по сайту</a></li>
+        <li class="user-list__item"><a href="#">Корзина: пока пуста</a></li>
       </ul>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
+      </ul>
+      <ul class="main-nav__list facilities-list">
+        <li class="facilities-list__item"><a class="facilities-list__new-products" href="#">Новые поступления</a></li>
+        <li class="facilities-list__item"><a class="facilities-list__sale" href="#">Распродажа</a></li>
+      </ul>
+      <p class="main-nav__features">
+        <a href="#">Бесплатная доставка по России</a>
+      </p>
     </div>
   </nav>
 </header>
@@ -30,8 +37,8 @@
   <h1 class="page-title page-title--grey-background">Вязание на заказ</h1>
   <div class="page-main__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</div>
   <form class="form" action="https://echo.htmlacademy.ru" method="get">
-    <fieldset class="form__fieldset fieldset">
-      <legend class="fieldset__legend">Тип</legend>
+    <div class="form__fieldset fieldset">
+      <div class="fieldset__legend">Тип</div>
       <ul class="fieldset__list">
         <li class="fieldset__item">
           <input class="fieldset__input"  type="radio" name="type-group" id="type-accessory" value="accessory" checked>
@@ -42,9 +49,9 @@
           <label class="fieldset__label" for="type-toy">Детская игрушка</label>
         </li>
       </ul>
-    </fieldset>
-    <fieldset class="form__fieldset fieldset">
-      <legend class="fieldset__legend">Цвет</legend>
+    </div>
+    <div class="form__fieldset fieldset">
+      <div class="fieldset__legend">Цвет</div>
       <ul class="fieldset__list">
         <li  class="fieldset__item">
           <input class="fieldset__input" type="checkbox" name="color-group" id="color-white" value="white" checked>
@@ -71,9 +78,9 @@
           <label class="fieldset__label" for="color-orange">Оранжевый</label>
         </li>
       </ul>
-    </fieldset>
-    <fieldset class="form__fieldset fieldset">
-      <legend class="fieldset__legend">ФИО</legend>
+    </div>
+    <div class="form__fieldset fieldset">
+      <div class="fieldset__legend">ФИО</div>
       <ul class="fieldset__list">
         <li  class="fieldset__item">
           <label class="fieldset__label" for="user-name">Имя:</label>
@@ -88,39 +95,47 @@
           <input class="fieldset__input" type="text" id="user-patronymic" placeholder="Отчество, если желаете">
         </li>
       </ul>
-    </fieldset>
-    <fieldset class="form__fieldset fieldset">
-      <legend class="fieldset__legend">ТЕЛ</legend>
+    </div>
+    <div class="form__fieldset fieldset">
+      <div class="fieldset__legend">ТЕЛ</div>
       <ul class="fieldset__list">
         <li  class="fieldset__item">
           <label class="fieldset__label visually-hidden" for="user-phone">Ваш телефон</label>
           <input class="fieldset__input fieldset__input--phone" type="tel" id="user-phone" placeholder="+7 XXX XXX XX XX*">
         </li>
       </ul>
-    </fieldset>
-    <fieldset class="form__fieldset fieldset">
-      <legend class="fieldset__legend">E-MAIL</legend>
+    </div>
+    <div class="form__fieldset fieldset">
+      <div class="fieldset__legend">E-MAIL</div>
       <ul class="fieldset__list">
         <li  class="fieldset__item">
           <label class="fieldset__label visually-hidden" for="user-email">Ваш Email</label>
           <input class="fieldset__input fieldset__input--email" type="email" id="user-email" placeholder="Ваш Email*">
         </li>
       </ul>
-    </fieldset>
-    <fieldset class="form__fieldset fieldset">
-      <legend class="fieldset__legend">ДОП</legend>
+    </div>
+    <div class="form__fieldset fieldset">
+      <div class="fieldset__legend">ДОП</div>
       <ul class="fieldset__list">
         <li  class="fieldset__item">
           <label class="fieldset__label visually-hidden" for="user-text">Пожелания к заказу</label>
           <textarea class="fieldset__textarea" name="user-text" id="user-text" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </li>
       </ul>
-    </fieldset>
-    <button class="form__button button" type="submit">Отправить заказ</button>
+    </div>
+    <div class="fieldset__wrapper">
+      <small class="fieldset__description">
+        <sup>*</sup> Поля обязательны для заполнения
+      </small>
+      <button class="form__button button" type="submit">Отправить заказ</button>
+    </div>
   </form>
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
+    <a class="page-footer__logo">
+      <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="Магазин «Мишка»">
+    </a>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item"><a class="social-link social-link--instagram" href="https://www.instagram.com/htmlacademy"></a></li>
@@ -130,7 +145,7 @@
     </div>
     <div class="page-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
-      <a class="copyright__link">
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" >
         <img class="copyright__link__logo-image" src="img/htmlacademy.svg" width="16" height="16" alt="HTML Academy">
       </a>
     </div>
