@@ -1,0 +1,9 @@
+.features {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    display: block;
+  }
+}

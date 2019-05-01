@@ -1,12 +1,37 @@
+.about-us {
+  @include fix-width-center ($width: 260px);
+}
+
 .about-us__title {
   @include font($size: 25px, $line-height: 30px, $color: $black,  $weight: 700);
 }
 
 .about-us__list {
+  @include list-reset();
+
   font-weight: 700;
   color: $black;
 
-  list-style: none;
-
   background-color: $color-main;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us {
+    @include fix-width-center ($width: 668px);
+  }
+
+  .about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-us__item {
+    width: 334px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    @include fix-width-center ($width: 700px);
+  }
 }

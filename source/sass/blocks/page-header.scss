@@ -1,14 +1,13 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
   @include font();
 }
 
-.page-header__logo-image {
-  &:hover,
-  &:focus {
-    opacity: 0.6;
-  }
+@media (min-width: $tablet-width) {
+  flex-direction: row;
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+@media (min-width: $desktop-width) {
+
 }

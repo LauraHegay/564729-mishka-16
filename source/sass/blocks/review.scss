@@ -1,11 +1,15 @@
+.review {
+  @include fix-width-center ($width: 260px);
+}
+
 .review__title {
   @include font($size: 25px, $line-height: 30px, $color: $black,  $weight: 700);
 }
 
 .review__list {
-  line-height: 30px;
+  @include list-reset ();
 
-  list-style: none;
+  line-height: 30px;
 }
 
 .review__author-name {
@@ -17,4 +21,44 @@
 .review__author-nik {
   font-size: 17px;
   line-height: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    @include fix-width-center ($width: 668px);
+  }
+
+  .review__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .review__title {
+    order: 1;
+    width: 488px;
+  }
+
+  .review__list {
+    order: 3;
+  }
+
+  .slider__write .button {
+    order: 2;
+    width: 175px;
+  }
+
+  .review__toggles {
+    order: 4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    @include fix-width-center ($width: 1050px);
+  }
+
+  .review__title {
+    order: 1;
+    width: 700px;
+  }
 }

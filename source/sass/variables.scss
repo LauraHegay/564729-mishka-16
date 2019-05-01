@@ -10,7 +10,11 @@ $black: #000000;
 $gray-darken: rgba(0, 0, 0, 0.6);
 $gray-dark: rgba(0, 0, 0, 0.3);
 $gray-light: rgba(68, 68, 68, 0.3);
+$gray-lighten: #f9f9f9;
 $gray: #444444;
 
-
 $for-debug: 2px solid green; //временно
+
+$tablet-width: 768px;
+$desktop-width: 1150px;
+$mobile-width-only: 767px;

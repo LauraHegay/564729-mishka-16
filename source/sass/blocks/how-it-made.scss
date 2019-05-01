@@ -1,7 +1,42 @@
+.how-it-made {
+  @include fix-width-center(260px);
+}
+
 .how-it-made__title {
   @include font($size: 17px, $weight: 700, $color: $black);
 }
 
 .how-it-made__intro {
   font-size: 13px;
+}
+
+.how-it-made__title--middle {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .how-it-made {
+    @include fix-width-center(668px);
+  }
+
+  .how-it-made__title--middle {
+    display: block;
+  }
+
+  .how-it-made__title--top {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .how-it-made {
+    display: flex;
+
+    @include fix-width-center(1050px);
+  }
+
+  .how-it-made-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
