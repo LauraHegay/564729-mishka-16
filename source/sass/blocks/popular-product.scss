@@ -5,26 +5,32 @@
 .popular-product__list {
   display: flex;
   flex-direction: column;
+
   @include list-reset();
 }
 
 .popular-product__item {
-  min-height: 105px;
-  @include font($size: 20px, $line-height: 30px, $color: $color-main, $weight: 700);
+  a {
+    display: block;
+    min-height: 105px;
 
-  background-color: $color-third;
+    @include font($size: 19px, $line-height: 30px, $color: $color-main, $weight: 700);
+    text-decoration: none;
 
-  &:hover {
+    background-color: $color-third;
+  }
+
+  a:hover {
     background-color: $color-third-light;
   }
 
-  &:focus,
-  &:active {
+  a:focus,
+  a:active {
     color: $color-main-dark;
     background-color: $color-third-light;
   }
 
-  &--darker-color {
+  &--darker-color a {
     background-color: $color-third-dark;
 
     &:hover {
@@ -39,14 +45,10 @@
   }
 }
 
-.popular-product__item a {
-  @include font($size: 20px, $line-height:30px, $color: $color-main,  $weight: 700);
-  text-decoration: none;
-}
-
 @media (min-width: $tablet-width) {
   .popular-product {
     @include fix-width-center(668px);
+    margin-top: -100px;
   }
 
   .popular-product__list {

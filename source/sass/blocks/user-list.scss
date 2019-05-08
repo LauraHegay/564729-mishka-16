@@ -2,19 +2,22 @@
   order: 3;
 }
 
-.user-list__item {
+.user-list a {
+  position: relative;
+
+  display: block;
+  padding-left: 76px;
+  padding-right: 30px;
+  padding-top: 25px;
+  padding-bottom: 29px;
+
+  @include font($size: 17px, $color: $black,  $weight: bold);
+  text-decoration: none;
+
   border-bottom: 1px solid $color-secondary;
 }
 
-.user-list__item a {
-  display: inline-block;
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-  @include font($size: 17px, $color: $black,  $weight: 700);
-
-  text-decoration: none;
-
+.user-list a[href] {
   &:hover {
     color: $gray-darken;
   }
@@ -23,24 +26,81 @@
   &:active {
     color: $gray-dark;
   }
+
+  &:hover path {
+    fill: $color-third;
+  }
+
+  &:focus path,
+  &:active path {
+    fill: $color-third-lighten;
+  }
+}
+
+.user-list__search-icon {
+  position: absolute;
+  top: 31px;
+  left: 33px;
+
+  width: 18px;
+  height: 18px;
+
+  path {
+    fill: $color-secondary;
+  }
+}
+
+.user-list__cart-icon {
+  position: absolute;
+  top: 27px;
+  left: 33px;
+
+  width: 21px;
+  height: 19px;
+
+  path {
+    fill: $color-secondary;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .user-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     order: 2;
-    width: 350px;
+    width: 400px;
+  }
+
+  .user-list a {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    border-left: 1px solid $color-secondary;
   }
 
   .user-list__item .user-list__search {
     display: block;
     width: 84px;
+    padding-left: 0;
+    padding-right: 0;
     font-size: 0;
   }
 
-  .user-list__item {
-    border-bottom: none;
+  .user-list__search-icon {
+    top: 36px;
+  }
+
+  .user-list__item .user-list__cart {
+    width: 229px;
+    padding-left: 84px;
+  }
+
+  .user-list__cart-icon {
+    top: 34px;
+    left: 30px;
   }
 }
 
@@ -48,5 +108,7 @@
   .user-list {
     order: 3;
     width: 400px;
+
+    background-color: $color-main;
   }
 }

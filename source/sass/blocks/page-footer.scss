@@ -22,6 +22,7 @@
   .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
+
     @include fix-width-center(668px);
   }
 
@@ -29,6 +30,7 @@
     display: block;
     width: 200px;
     margin: 0;
+    margin-top: 52px;
   }
 
   .page-footer__social {

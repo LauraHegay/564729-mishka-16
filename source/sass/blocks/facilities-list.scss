@@ -7,14 +7,37 @@
     display: flex;
     order: 3;
     width: 525px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+
+    background-color: $gray-lighten;
   }
 
   .facilities-list a {
     display: flex;
+    padding-right: 28px;
+    padding-top: 17px;
+    padding-bottom: 17px;
 
-    @include font($size: 15px, $color: $black,  $weight: 700);
+    @include font($size: 15px, $color: $black, $weight: 700);
     text-decoration: none;
+  }
+
+  .facilities-list__item:nth-child(1) a {
+    padding-left: 50px;
+  }
+
+  .facilities-list__item:nth-child(2) a {
+    padding-left: 34px;
+    padding-right: 5px;
+  }
+
+  .facilities-list a[href] {
+    &:hover {
+      color: $gray-darken;
+    }
+
+    &:focus,
+    &:active {
+      color: $gray-dark;
+    }
   }
 }

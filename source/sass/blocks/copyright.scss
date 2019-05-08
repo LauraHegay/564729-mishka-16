@@ -1,4 +1,39 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
 .copyright__text {
+  margin-top: 27px;
+  margin-bottom: 34px;
+  padding-right: 30px;
+
   @include font(19px, 18px, 700, $black);
 }
 
+.copyright__link {
+  display: block;
+  margin-top: 24px;
+}
+
+.copyright__link__logo-image {
+  &:hover path {
+    fill: $color-third-darken;
+  }
+
+  &:focus path,
+  &:active path {
+    fill: $color-third-more-lighten;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    margin-top: 56px;
+    margin-bottom: 56px;
+  }
+
+  .copyright__link {
+    margin-top: 56px;
+  }
+}

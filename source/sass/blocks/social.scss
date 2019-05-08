@@ -1,0 +1,43 @@
+.social {
+  display: flex;
+  justify-content: center;
+
+  @include fix-width-center (260px);
+  margin-top: 27px;
+  margin-bottom: 28px;
+
+  border-bottom: 1px solid $color-divider;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include fix-width-center (146px);
+  @include list-reset();
+}
+
+.social-link {
+  &:hover svg {
+    path {
+      fill: $color-third-darken;
+    }
+  }
+
+  &:focus svg,
+  &:active svg {
+    path {
+      fill: $color-third-lighten;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin-top: 56px;
+    margin-bottom: 56px;
+
+    border-bottom: none;
+  }
+}

@@ -1,3 +1,16 @@
+@font-face {
+  font-family: "Open Sans";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
 
 body {
   min-width: 320px;
@@ -6,8 +19,7 @@ body {
 
   @include font();
 
-  //background-color: $color-main;
-  //background: transparent url("../img/mishka-index-mobile.jpg") no-repeat 50% 0;
+  //background: #ffffff url("../img/mishka-index-mobile.jpg") no-repeat 50% 0;
   //background-size: 320px auto;
   //min-height: 750px;
 }
