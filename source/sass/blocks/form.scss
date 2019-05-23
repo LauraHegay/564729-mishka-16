@@ -2,14 +2,30 @@
   @include fix-width-center(260px);
 }
 
+.form__button {
+  margin-top: 27px;
+  margin-bottom: 55px;
+}
+
 @media (min-width: $tablet-width) {
   .form {
-    width: 668px;
+    width: 768px;
+  }
+
+  .form__button {
+    margin-top: 46px;
+    margin-bottom: 48px;
+    margin-left: 51px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .form {
-    width: 1050px;
+    width: 1150px;
+  }
+
+  .form__button {
+    margin-top: 43px;
+    margin-left: 0;
   }
 }

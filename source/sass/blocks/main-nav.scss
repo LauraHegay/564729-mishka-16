@@ -2,8 +2,6 @@
   position: relative;
 
   @include fix-width-center();
-
-  background-color: $color-main;
 }
 
 .main-nav__wrapper {
@@ -69,14 +67,14 @@
   content: "";
 
   position: absolute;
-  top: 15px;
-  left: 17px;
+  top: 18px;
+  left: 16px;
 
-  width: 23px;
+  width: 20px;
   height: 2px;
 
   background-color: $black;
-  box-shadow: 0 8px 0 0 $black, 0 16px 0 0 $black;
+  box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -162,16 +160,12 @@
     padding-top: 17px;
     padding-bottom: 0;
     padding-right: 50px;
-
-    background-color: $gray-lighten;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
     width: 1150px;
-
-    background-color: $gray-lighten;
   }
 
   .main-nav__wrapper {
@@ -180,8 +174,9 @@
 
   .main-nav__logo {
     flex-grow: 1;
+    box-sizing: border-box;
     order: 2;
-    width: auto;
+    width: 100px;
     padding: 0;
     padding-left: 38px;
 

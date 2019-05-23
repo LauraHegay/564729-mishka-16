@@ -1,0 +1,26 @@
+.make_order {
+  @include fix-width-center(192px);
+}
+
+.make_order .button {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+@media (min-width: $tablet-width) {
+  .make_order {
+    width: 583px;
+  }
+
+  .make_order .button {
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .make_order {
+    width: 228px;
+    margin-left: 81px;
+    margin-right: 0;
+  }
+}

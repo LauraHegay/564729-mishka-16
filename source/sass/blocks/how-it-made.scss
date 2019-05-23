@@ -1,12 +1,48 @@
 .how-it-made {
   @include fix-width-center(260px);
+  margin-bottom: 57px;
+
+  border: 1px solid $color-divider;
 }
 
 .how-it-made__title {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  padding-left: 90px;
+  padding-top: 23px;
+
   @include font($size: 17px, $weight: 700, $color: $black);
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 29px;
+    left: 34px;
+
+    width: 42px;
+    height: 42px;
+
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.how-it-made__video {
+  margin-bottom: 20px;
 }
 
 .how-it-made__intro {
+  display: block;
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  padding-left: 34px;
+  padding-right: 34px;
+
   font-size: 13px;
 }
 
@@ -17,6 +53,26 @@
 @media (min-width: $tablet-width) {
   .how-it-made {
     @include fix-width-center(668px);
+    margin-bottom: 62px;
+  }
+
+  .how-it-made__video img {
+    width: 668px;
+    height: 455px;
+  }
+
+  .how-it-made__title {
+    margin-bottom: 32px;
+    padding-left: 106px;
+    padding-top: 12px;
+
+    font-size: 20px;
+    line-height: 24px;
+
+    &::before {
+      top: 7px;
+      left: 42px;
+    }
   }
 
   .how-it-made__title--middle {
@@ -26,17 +82,59 @@
   .how-it-made__title--top {
     display: none;
   }
+
+  .how-it-made__intro {
+    display: block;
+    width: 370px;
+    margin-bottom: 34px;
+    padding-left: 39px;
+    padding-right: 39px;
+
+    font-size: 15px;
+    line-height: 30px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .how-it-made {
     display: flex;
+    margin-bottom: 0;
 
     @include fix-width-center(1050px);
+  }
+
+  .how-it-made__title {
+    &::before {
+      top: 40px;
+      left: 80px;
+    }
+  }
+
+  .how-it-made__title--middle {
+    width: 238px;
+    padding-left: 78px;
+    padding-top: 93px;
+
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .how-it-made-wrapper {
     display: flex;
     flex-direction: column;
+    width: 370px;
+  }
+
+  .how-it-made__video {
+    margin: 0;
+    padding: 0;
+    width: 682px;
+  }
+
+  .how-it-made__intro {
+    width: 240px;
+    padding-left: 78px;
+    margin-bottom: 47px;
+    padding-right: 0;
   }
 }

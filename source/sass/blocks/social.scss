@@ -3,8 +3,8 @@
   justify-content: center;
 
   @include fix-width-center (260px);
-  margin-top: 27px;
-  margin-bottom: 28px;
+  padding-top: 25px;
+  padding-bottom: 21px;
 
   border-bottom: 1px solid $color-divider;
 }
@@ -35,9 +35,18 @@
 
 @media (min-width: $tablet-width) {
   .social {
-    margin-top: 56px;
+    margin-top: 60px;
     margin-bottom: 56px;
+    margin-right: 56px;
+    padding: 0;
 
     border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    margin-left: 51px;
+    margin-top: 39px;
   }
 }

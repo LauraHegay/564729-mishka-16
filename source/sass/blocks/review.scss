@@ -1,15 +1,30 @@
 .review {
   @include fix-width-center ($width: 260px);
+  margin-bottom: 42px;
 }
 
 .review__title {
-  @include font($size: 25px, $line-height: 30px, $color: $black,  $weight: 700);
+  @include font($size: 25px, $line-height: 30px, $color: $black,  $weight: bold);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 23px;
 }
 
 .review__list {
   @include list-reset ();
+  margin-bottom: 28px;
 
   line-height: 30px;
+}
+
+.review__item p {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.review__item .review__content {
+  margin-bottom: 26px;
 }
 
 .review__author-name {
@@ -23,19 +38,49 @@
   line-height: 30px;
 }
 
+.review__toggles {
+  margin-bottom: 40px;
+}
+
 @media (min-width: $tablet-width) {
   .review {
-    @include fix-width-center ($width: 668px);
+    min-height: 460px;
+
+    @include fix-width-center ($width: 768px);
+    margin-bottom: 66px;
+
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 
   .review__wrapper {
+    position: relative;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 50px;
   }
 
   .review__title {
     order: 1;
     width: 488px;
+    margin-bottom: 50px;
+    padding-top: 77px;
+    padding-left: 0;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .review__item .review__content {
+    display: block;
+    padding-right: 35px;
+    margin-bottom: 56px;
+
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .review__list {
@@ -48,17 +93,47 @@
   }
 
   .review__toggles {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     order: 4;
+
+    margin-right: 8px;
+    margin-bottom: 36px;
+
+    border: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .review {
     @include fix-width-center ($width: 1050px);
+    margin-bottom: 70px;
   }
 
   .review__title {
     order: 1;
     width: 700px;
+    padding-top: 70px;
+    padding-left: 119px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .review__list {
+    margin-left: 125px;
+  }
+
+  .review__item {
+    padding-right: 40px;
+  }
+
+  .review__item .review__content {
+    margin-bottom: 35px;
+  }
+
+  .review__toggles {
+    margin-bottom: 30px;
   }
 }
