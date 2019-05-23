@@ -1,0 +1,34 @@
+.characteristic {
+  width: 100%;
+
+  line-height: 20px;
+
+  border-collapse: collapse;
+}
+
+.characteristic tr {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  border-bottom: 1px solid $color-divider;
+}
+
+.characteristic td {
+  margin: 0;
+  padding: 0;
+  padding-top: 9px;
+  padding-bottom: 11px;
+
+  text-align: left;
+}
+
+.characteristic__title {
+  width: 96px;
+}
+
+@media (min-width: $tablet-width) {
+  .characteristic {
+    width: 290px;
+  }
+}

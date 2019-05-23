@@ -4,6 +4,7 @@
 
 .page-main__intro {
   @include fix-width-center(260px);
+  margin-bottom: 24px;
 
   font-size: 13px;
 }
@@ -22,20 +23,40 @@
   }
 
   .page-main__intro {
-    @include fix-width-center(668px);
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: -38px;
+    margin-bottom: 9px;
+    padding-top: 82px;
+    padding-right: 50px;
+    padding-left: 50px;
+
+    font-size: 17px;
+    line-height: 30px;
+
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat no-repeat;
+    background-origin: border-box;
+    background-size: 768px auto;
+    background-position: 0 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-main {
-    @include fix-width-center(1150px);
+    width: 1150px;
   }
 
   .page-main__catalog {
-    @include fix-width-center(1050px);
+    width: 1150px;
   }
 
   .page-main__intro {
-    @include fix-width-center(700px);
+    width: 1150px;
+    padding-left: 224px;
+    padding-right: 224px;
+    padding-top: 136px;
+
+    background-size: 1150px auto;
   }
 }

@@ -1,45 +1,112 @@
 .contacts {
-  @include fix-width-center();
+  @include fix-width-center ();
+  margin-bottom: 37px;
+
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat no-repeat;
+  background-size: 320px auto;
 }
 
-.contacts__wrapper,
 .contacts__write-us {
-  @include fix-width-center(260px);
+  @include fix-width-center (260px);
 }
 
 .contacts__title {
-  @include font($size: 18px, $line-height: 30px, $color: $black,  $weight: 700);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+  padding-top: 41px;
+  padding-left: 30px;
+
+  @include font($size: 18px, $line-height: 30px, $color: $black,  $weight: bold);
 }
 
 .contacts__list {
   margin: 0;
   padding: 0;
-
+  margin-bottom: 38px;
+  margin-left: 30px;
   line-height: 30px;
+
+  border-collapse: collapse;
+}
+
+.contacts__map {
+  margin-bottom: 31px;
 }
 
 @media (min-width: $tablet-width) {
   .contacts {
     @include fix-width-center(768px);
+    margin-bottom: 56px;
+
+    background-size: 768px auto;
   }
 
   .contacts__wrapper {
-    @include fix-width-center(668px);
+    @include fix-width-center(768px);
+  }
+
+  .contacts__title {
+    position: relative;
+    margin-bottom: 48px;
+    padding-top: 77px;
+    padding-left: 46px;
+
+    font-size: 43px;
+    line-height: 50px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 62px;
+      right: 53px;
+
+      width: 47px;
+      height: 81px;
+
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+    }
+  }
+
+  .contacts__list {
+    margin-left: 50px;
+    margin-bottom: 57px;
   }
 
   .contacts__list tbody {
     display: flex;
     width: 668px;
+
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .contacts__item {
     width: 334px;
+  }
+
+  .contacts__map {
+    margin-bottom: 48px;
+  }
+
+  .contacts__map img {
+    width: 768px;
+    height: 460px;
+  }
+
+  .contacts__write-us {
+    width: 230px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
     @include fix-width-center(1150px);
+    margin-bottom: 124px;
+
+    background-size: 1150px auto;
   }
 
   .contacts__wrapper {
@@ -49,6 +116,24 @@
     min-height: 450px;
   }
 
+  .contacts__title {
+    padding-top: 158px;
+    padding-left: 170px;
+
+    font-size: 53px;
+    line-height: 57px;
+
+    &::after {
+      top: 150px;
+      right: 0;
+      left: 63px;
+    }
+  }
+
+  .contacts__list {
+    margin-left: 174px;
+  }
+
   .contacts__list tbody {
     display: block;
     width: 350px;
@@ -56,11 +141,13 @@
 
   .contacts__write-us.button {
     margin: 0;
+    margin-top: 77px;
+    margin-left: 175px;
   }
 
   .contacts__map {
     position: absolute;
-    top: -20px;
+    top: 86px;
     left: 525px;
 
     width: 525px;

@@ -1,30 +1,55 @@
 .popular-product {
   @include fix-width-center();
+  margin-bottom: 27px;
 }
 
 .popular-product__list {
   display: flex;
   flex-direction: column;
+
   @include list-reset();
 }
 
 .popular-product__item {
-  min-height: 105px;
-  @include font($size: 20px, $line-height: 30px, $color: $color-main, $weight: 700);
+  a {
+    position: relative;
 
-  background-color: $color-third;
+    display: block;
+    padding-top: 25px;
+    padding-left: 27px;
+    padding-right: 121px;
+    min-height: 78px;
 
-  &:hover {
-    background-color: $color-third-light;
+    @include font($size: 19px, $line-height: 24px, $color: $color-main, $weight: bold);
+    text-decoration: none;
+
+    background-color: $color-third;
+
+    &:hover {
+      min-height: 83px;
+      padding-top: 20px;
+
+      background-color: $color-third-light;
+
+      &::after {
+        top: 18px;
+
+        opacity: 0.5;
+      }
+    }
+
+    &:focus,
+    &:active {
+      color: $color-main-dark;
+      background-color: $color-third-light;
+
+      &::after {
+        opacity: 0.3;
+      }
+    }
   }
 
-  &:focus,
-  &:active {
-    color: $color-main-dark;
-    background-color: $color-third-light;
-  }
-
-  &--darker-color {
+  &--darker-color a {
     background-color: $color-third-dark;
 
     &:hover {
@@ -39,14 +64,44 @@
   }
 }
 
-.popular-product__item a {
-  @include font($size: 20px, $line-height:30px, $color: $color-main,  $weight: 700);
-  text-decoration: none;
+.popular-product__item--interior a {
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 40px;
+    height: 62px;
+
+    top: 23px;
+    right: 36px;
+
+    opacity: 0.5;
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.popular-product__item--toy a {
+  &::after {
+    content: "";
+
+    position: absolute;
+    width: 60px;
+    height: 60px;
+
+    top: 21px;
+    right: 28px;
+
+    opacity: 0.5;
+    background-image: url("../img/icon-toy.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .popular-product {
     @include fix-width-center(668px);
+    margin-top: -56px;
   }
 
   .popular-product__list {
@@ -57,5 +112,46 @@
   .popular-product__item {
     width: 334px;
   }
+
+  .popular-product__item a {
+    min-height: 88px;
+    padding-top: 30px;
+    padding-left: 36px;
+    padding-right: 298px;
+
+    line-height: 30px;
+
+    &:hover {
+      min-height: 93px;
+      padding-top: 25px;
+    }
+  }
+
+  .popular-product__item--interior a {
+    &::after {
+      top: 30px;
+    }
+  }
+
+  .popular-product__item--toy a {
+    &::after {
+      top: 34px;
+      right: 32px;
+    }
+  }
 }
 
+@media (min-width: $desktop-width) {
+  .popular-product {
+    @include fix-width-center(1050px);
+    margin-top: -129px;
+  }
+
+  .popular-product__item {
+    width: 525px;
+
+    a {
+      padding-right: 312px;
+    }
+  }
+}

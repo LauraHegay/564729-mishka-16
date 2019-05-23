@@ -1,13 +1,14 @@
 .page-header {
   display: flex;
   flex-direction: column;
+
   @include font();
 }
 
-@media (min-width: $tablet-width) {
-  flex-direction: row;
-}
-
-@media (min-width: $desktop-width) {
-
-}
+//@media (min-width: $tablet-width) {
+//  flex-direction: row;
+//}
+//
+//@media (min-width: $desktop-width) {
+//
+//}

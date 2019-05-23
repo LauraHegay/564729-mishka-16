@@ -1,0 +1,52 @@
+.social {
+  display: flex;
+  justify-content: center;
+
+  @include fix-width-center (260px);
+  padding-top: 25px;
+  padding-bottom: 21px;
+
+  border-bottom: 1px solid $color-divider;
+}
+
+.social__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include fix-width-center (146px);
+  @include list-reset();
+}
+
+.social-link {
+  &:hover svg {
+    path {
+      fill: $color-third-darken;
+    }
+  }
+
+  &:focus svg,
+  &:active svg {
+    path {
+      fill: $color-third-lighten;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin-top: 60px;
+    margin-bottom: 56px;
+    margin-right: 56px;
+    padding: 0;
+
+    border-bottom: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    margin-left: 51px;
+    margin-top: 39px;
+  }
+}

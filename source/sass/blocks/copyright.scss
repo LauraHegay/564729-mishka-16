@@ -1,4 +1,55 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
 .copyright__text {
+  margin: 0;
+  margin-top: 28px;
+  margin-bottom: 34px;
+  padding-right: 24px;
+  padding-left: 8px;
+
   @include font(19px, 18px, 700, $black);
 }
 
+.copyright__link {
+  display: block;
+  margin-top: 17px;
+}
+
+.copyright__link__logo-image {
+  &:hover path {
+    fill: $color-third-darken;
+  }
+
+  &:focus path,
+  &:active path {
+    fill: $color-third-more-lighten;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    margin-top: 64px;
+    margin-bottom: 56px;
+    padding-right: 24px;
+  }
+
+  .copyright__link {
+    margin-top: 51px;
+    margin-right: 78px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    margin-top: 44px;
+    margin-bottom: 0;
+    padding-left: 100px;
+  }
+
+  .copyright__link {
+    margin-top: 32px;
+  }
+}
