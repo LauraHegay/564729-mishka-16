@@ -1,6 +1,6 @@
 .popular-product {
   @include fix-width-center();
-  margin-bottom: 27px;
+  margin-bottom: 25px;
 }
 
 .popular-product__list {
@@ -16,7 +16,7 @@
 
     display: block;
     padding-top: 25px;
-    padding-left: 27px;
+    padding-left: 30px;
     padding-right: 121px;
     min-height: 78px;
 
@@ -26,14 +26,9 @@
     background-color: $color-third;
 
     &:hover {
-      min-height: 83px;
-      padding-top: 20px;
-
       background-color: $color-third-light;
 
       &::after {
-        top: 18px;
-
         opacity: 0.5;
       }
     }
@@ -122,8 +117,11 @@
     line-height: 30px;
 
     &:hover {
-      min-height: 93px;
+      position: relative;
+
       padding-top: 25px;
+
+      transform: translateY(-5px);
     }
   }
 

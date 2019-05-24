@@ -3,7 +3,7 @@
   justify-content: center;
 
   @include fix-width-center (260px);
-  padding-top: 25px;
+  padding-top: 22px;
   padding-bottom: 21px;
 
   border-bottom: 1px solid $color-divider;
@@ -19,6 +19,8 @@
 }
 
 .social-link {
+  display: block;
+
   &:hover svg {
     path {
       fill: $color-third-darken;
@@ -30,6 +32,19 @@
     path {
       fill: $color-third-lighten;
     }
+  }
+
+  &--instagram {
+    padding-top: 7px;
+  }
+
+  &--facebook {
+    padding-top: 2px;
+  }
+
+  &--twitter {
+    padding-right: 5px;
+    padding-top: 5px;
   }
 }
 
