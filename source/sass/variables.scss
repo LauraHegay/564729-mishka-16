@@ -1,4 +1,5 @@
 $color-main: #ffffff; //основной цвет
+$color-main-light: rgba(255, 255, 255, 0.9);
 $color-main-dark: rgba(255, 255, 255, 0.3);
 $color-secondary: #f1f1f1; //дополнительный цвет
 $color-divider: #e5e5e5; //цвет разделительных линий
@@ -9,7 +10,6 @@ $color-third-more-lighten: #bde3dd;
 $color-third-dark: #56c3b2;
 $color-third-darken: #46c1ae;
 
-
 $black: #000000;
 $gray-darken: rgba(0, 0, 0, 0.6);
 $gray-dark: rgba(0, 0, 0, 0.3);
@@ -17,8 +17,8 @@ $gray-light: rgba(68, 68, 68, 0.3);
 $gray-lighten: #f9f9f9;
 $gray: #444444;
 
-$for-debug: 2px solid green; //временно
-
 $tablet-width: 768px;
 $desktop-width: 1150px;
 $mobile-width-only: 767px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

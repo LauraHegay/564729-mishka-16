@@ -1,0 +1,14 @@
+.page-modal {
+  position: fixed;
+
+  display: none;
+  z-index: 2;
+
+  background-color: $color-main;
+  border: 1px solid $color-divider;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.page-modal--show {
+  display: block;
+}

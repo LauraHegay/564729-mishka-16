@@ -20,7 +20,8 @@
   justify-content: center;
   order: 1;
   padding-top: 22px;
-  padding-bottom: 22px;
+  padding-bottom: 17px;
+  z-index: 1;
 
   &:hover,
   &:focus {
@@ -47,7 +48,7 @@
   position: absolute;
   top: 14px;
   right: 17px;
-  z-index: 2;
+  z-index: 10;
 
   width: 50px;
   height: 50px;
@@ -143,7 +144,7 @@
     flex-grow: 1;
     padding-left: 48px;
     padding-top: 22px;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
   }
 
   .main-nav__logo img {

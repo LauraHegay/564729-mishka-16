@@ -32,7 +32,43 @@
 }
 
 .how-it-made__video {
+  position: relative;
+
   margin-bottom: 20px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 44px;
+    left: 77px;
+
+    width: 101px;
+    height: 77px;
+
+    background-image: url("../img/icon-play.svg");
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    &::before {
+      width: 121px;
+      height: 92px;
+
+      background-size: 121px auto;
+    }
+  }
+
+  &:focus,
+  &:active {
+    &::before {
+      background-size: 81px auto;
+      width: 81px;
+      height: 62px;
+
+      opacity: 0.3;
+    }
+  }
 }
 
 .how-it-made__intro {
@@ -59,6 +95,13 @@
   .how-it-made__video img {
     width: 668px;
     height: 455px;
+  }
+
+  .how-it-made__video {
+    &::before {
+      top: 190px;
+      left: 284px;
+    }
   }
 
   .how-it-made__title {
@@ -129,6 +172,11 @@
     margin: 0;
     padding: 0;
     width: 682px;
+
+    &::before {
+      top: 190px;
+      left: 292px;
+    }
   }
 
   .how-it-made__intro {
