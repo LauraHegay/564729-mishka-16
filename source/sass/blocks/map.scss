@@ -11,8 +11,10 @@
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  background-image: url("../img/map-mobile@2x.jpg");
-  background-size: 320px auto;
+  .map {
+    background-image: url("../img/map-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -31,8 +33,10 @@
 }
 
 @media (min-width: $tablet-width) and (min-resolution: $retina-dpi), (min-width: $tablet-width) and (min-resolution: $retina-dppx) {
-  background-image: url("../img/map-tablet@2x.jpg");
-  background-size: 1150px auto;
+  .map {
+    background-image: url("../img/map-tablet@2x.jpg");
+    background-size: 1150px auto;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -51,6 +55,8 @@
 }
 
 @media (min-width: $desktop-width) and (min-resolution: $retina-dpi), (min-width: $desktop-width) and (min-resolution: $retina-dppx) {
-  background-image: url("../img/map-desktop@1x.jpg");
-  background-size: 1150px auto;
+  .map {
+    background-image: url("../img/map-desktop@1x.jpg");
+    background-size: 1150px auto;
+  }
 }
