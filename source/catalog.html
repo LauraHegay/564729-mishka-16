@@ -150,8 +150,11 @@
       <section class="how-it-made">
         <h2 class="how-it-made__title how-it-made__title--top">Процесс производства</h2>
         <div class="how-it-made__video">
-          <!--Здесь будет видео. Временно вставлю изображение.-->
-          <img src="img/video-mobile.png" alt="Процесс производства" width="260px" height="150px">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Процесс производства" width="260px" height="150px">
+          </picture>
         </div>
         <div class="how-it-made__wrapper">
           <h2 class="how-it-made__title how-it-made__title--middle">Процесс производства</h2>
@@ -161,7 +164,7 @@
           </div>
         </div>
       </section>
-    
+
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
@@ -223,4 +226,3 @@
     <script src="js/script.js"></script>
   </body>
 </html>
-

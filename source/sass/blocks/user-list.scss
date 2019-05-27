@@ -13,7 +13,7 @@
 
   @include font($size: 17px, $color: $black,  $weight: bold);
   text-decoration: none;
-  
+
   border-bottom: 1px solid $color-secondary;
 }
 
@@ -73,6 +73,8 @@
   }
 
   .user-list a {
+    display: block;
+    box-sizing: border-box;
     padding-left: 0;
     padding-right: 0;
     padding-top: 32px;
@@ -81,8 +83,11 @@
     border-left: 1px solid $color-secondary;
   }
 
+  .user-list__item {
+    box-sizing: border-box;
+  }
+
   .user-list__item .user-list__search {
-    display: block;
     width: 84px;
     padding-left: 0;
     padding-right: 0;
@@ -94,8 +99,8 @@
   }
 
   .user-list__item .user-list__cart {
-    width: 229px;
-    padding-left: 84px;
+    width: 315px;
+    padding-left: 82px;
   }
 
   .user-list__cart-icon {

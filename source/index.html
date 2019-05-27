@@ -109,7 +109,7 @@
             </picture>
           </div>
           <p class="week-product__price">Цена: 990 руб.</p>
-          <a class="week-product__order button" href="#">Заказать</a>
+          <button class="week-product__order button" href="#">Заказать</button>
         </div>
       </section>
       <section class="about-us">
@@ -229,6 +229,30 @@
         </div>
       </div>
     </footer>
+    <section class="page-modal modal">
+      <div class="modal__wrapper">
+        <h2 class="modal__title">Добавить в корзину</h2>
+        <form class="modal-form form" action="https://echo.htmlacademy.ru" method="get">
+            <div class="form__description">Выберите  размер:</div>
+            <ul class="form__list">
+              <li class="form__item">
+                <input class="form__input visually-hidden"  type="radio" name="size" id="size-S" value="S" checked>
+                <label class="form__label" for="size-S">S</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input visually-hidden" type="radio" name="size" id="size-M" value="M">
+                <label class="form__label" for="size-M">M</label>
+              </li>
+              <li class="form__item">
+                <input class="form__input visually-hidden" type="radio" name="size" id="size-L" value="L">
+                <label class="form__label" for="size-L">L</label>
+              </li>
+            </ul>
+          <button class="form__button button button--close" type="submit">Добавить</button>
+      </form>
+      </div>
+    </section>
+    <div class="page-overlay"></div>
     <script src="js/script.js"></script>
   </body>
 </html>
