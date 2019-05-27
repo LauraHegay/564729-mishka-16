@@ -57,8 +57,7 @@
 
     @include fix-width-center(768px);
     margin-bottom: 53px;
-
-    margin-top: -10px;
+    margin-top: -15px;
 
     background-image: url("../img/bg-zigzag-fill.svg");
     background-repeat: repeat no-repeat;
@@ -90,8 +89,8 @@
   .week-product__value {
     display: inline-block;
     width: 90px;
-    padding-top: 66px;
-    margin-right: 66px;
+    padding-top: 69px;
+    margin-right: 68px;
 
     line-height: 17px;
     text-align: center;
@@ -99,7 +98,7 @@
 
   .week-product__description {
     padding-left: 50px;
-    margin-bottom: 33px;
+    margin-bottom: 35px;
 
     font-size: 17px;
     line-height: 30px;
@@ -107,12 +106,12 @@
 
   .week-product__characteristic {
     margin-left: 50px;
-    margin-bottom: 55px;
+    margin-bottom: 57px;
   }
 
   .week-product__price {
     margin-bottom: 33px;
-    padding-left: 50px;
+    padding-left: 55px;
 
     font-size: 20px;
     line-height: 24px;
@@ -130,6 +129,7 @@
   }
 
   .week-product__order {
+    width: 293px;
     margin-left: 50px;
   }
 }

@@ -109,17 +109,15 @@
   }
 
   .popular-product__item a {
-    min-height: 88px;
+    min-height: 93px;
     padding-top: 30px;
-    padding-left: 36px;
-    padding-right: 298px;
+    padding-left: 37px;
+    padding-right: 295px;
 
     line-height: 30px;
 
     &:hover {
       position: relative;
-
-      padding-top: 25px;
 
       transform: translateY(-5px);
     }
