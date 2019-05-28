@@ -19,12 +19,14 @@
 }
 
 .copyright__link__logo-image {
-  &:hover path {
+  fill: $color-third;
+
+  &:hover {
     fill: $color-third-darken;
   }
 
-  &:focus path,
-  &:active path {
+  &:focus,
+  &:active {
     fill: $color-third-more-lighten;
   }
 }
