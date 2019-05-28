@@ -27,12 +27,15 @@
     color: $gray-dark;
   }
 
-  &:hover path {
+  &:hover .user-list__search-icon,
+  &:hover .user-list__cart-icon {
     fill: $color-third;
   }
 
-  &:focus path,
-  &:active path {
+  &:focus .user-list__search-icon,
+  &:active .user-list__search-icon,
+  &:focus .user-list__cart-icon,
+  &:active .user-list__cart-icon {
     fill: $color-third-lighten;
   }
 }
@@ -45,9 +48,7 @@
   width: 18px;
   height: 18px;
 
-  path {
-    fill: $color-secondary;
-  }
+  fill: $color-secondary;
 }
 
 .user-list__cart-icon {
@@ -58,9 +59,7 @@
   width: 21px;
   height: 19px;
 
-  path {
-    fill: $color-secondary;
-  }
+  fill: $color-secondary;
 }
 
 @media (min-width: $tablet-width) {

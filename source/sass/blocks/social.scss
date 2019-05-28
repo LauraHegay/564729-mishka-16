@@ -22,16 +22,12 @@
   display: block;
 
   &:hover svg {
-    path {
       fill: $color-third-darken;
-    }
   }
 
   &:focus svg,
   &:active svg {
-    path {
       fill: $color-third-lighten;
-    }
   }
 
   &--instagram {
