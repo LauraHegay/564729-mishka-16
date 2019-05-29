@@ -23,9 +23,9 @@
   .page-main__intro {
     width: 100%;
     box-sizing: border-box;
-    margin-top: -38px;
+    margin-top: -50px;
     margin-bottom: 9px;
-    padding-top: 82px;
+    padding-top: 84px;
     padding-right: 50px;
     padding-left: 50px;
 
@@ -38,6 +38,10 @@
     background-size: 768px auto;
     background-position: 0 0;
   }
+
+  .page-main__intro__content {
+    @include fix-width-center(668px);
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -46,11 +50,15 @@
   }
 
   .page-main__intro {
-    width: 1150px;
     padding-left: 224px;
     padding-right: 224px;
-    padding-top: 136px;
+    padding-top: 138px;
 
     background-size: 1150px auto;
+  }
+
+  .page-main__intro__content {
+    margin-left: 0px;
+    width: 680px;
   }
 }

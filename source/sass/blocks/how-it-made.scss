@@ -98,6 +98,8 @@
   }
 
   .how-it-made__video {
+    margin-bottom: 24px;
+
     &::before {
       top: 190px;
       left: 284px;
@@ -128,7 +130,6 @@
 
   .how-it-made__intro {
     display: block;
-    width: 370px;
     margin-bottom: 34px;
     padding-left: 39px;
     padding-right: 39px;
