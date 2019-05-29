@@ -46,13 +46,16 @@
   }
 }
 
+
 .catalog__item__image {
   margin-bottom: 20px;
 }
 
 .catalog__item__title {
   display: block;
-  margin: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
   margin-bottom: 4px;
   padding: 0;
 }
@@ -212,6 +215,7 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+
     @include fix-width-center(1050px);
   }
 
