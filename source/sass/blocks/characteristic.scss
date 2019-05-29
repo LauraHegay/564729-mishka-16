@@ -32,3 +32,9 @@
     width: 290px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .characteristic td {
+    padding-bottom: 11px;
+  }
+}

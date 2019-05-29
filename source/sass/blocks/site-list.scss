@@ -14,7 +14,7 @@
   @include font($size: 17px, $color: $black,  $weight: 700);
   text-decoration: none;
 
-  border-bottom: 1px solid $color-secondary;
+  border-bottom: 1px solid $color-divider;
 }
 
 .site-list a[href] {
@@ -72,7 +72,7 @@
 
     font-size: 17px;
 
-    border-bottom: 1px solid $color-secondary;
+    border-bottom: none;
     border-left: 1px solid $color-secondary;
   }
 
