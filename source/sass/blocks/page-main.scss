@@ -11,12 +11,12 @@
   font-size: 13px;
 }
 
-.page-main__catalog {
+.page-catalog {
   @include fix-width-center(260px);
 }
 
 @media (min-width: $tablet-width) {
-  .page-main__catalog {
+  .page-catalog {
     @include fix-width-center(668px);
   }
 
@@ -45,7 +45,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .page-main__catalog {
+  .page-catalog {
     width: 1150px;
   }
 
