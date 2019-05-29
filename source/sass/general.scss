@@ -18,10 +18,6 @@ body {
   padding: 0;
 
   @include font();
-
-  //background: #ffffff url("../img/mishka-index-mobile.jpg") no-repeat 50% 0;
-  //background-size: 320px auto;
-  //min-height: 750px;
 }
 
 img {
@@ -46,17 +42,3 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-//@media (min-width: $tablet-width) {
-//  body {
-//    background: $gray url("../img/mishka-index-tablet.jpg") no-repeat 50% 0;
-//    background-size: 768px auto;
-//  }
-//}
-//
-//@media (min-width: $desktop-width) {
-//  body {
-//    background: $gray url("../img/mishka-index-desktop.jpg") no-repeat 50% 0;
-//    background-size: 1150px auto;
-//  }
-//}

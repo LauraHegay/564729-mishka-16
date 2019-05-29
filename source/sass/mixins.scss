@@ -13,9 +13,7 @@
   list-style: none;
 }
 
-//блок фиксированной ширины расположенный по центру
 @mixin fix-width-center ($width: 320px) {
   width: $width;
   margin: 0 auto;
 }
-

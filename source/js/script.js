@@ -1,5 +1,3 @@
-// открытие-закрытие меню
-
 var navMain = document.querySelector('.main-nav');
 var navToggle = document.querySelector('.main-nav__toggle');
 
@@ -15,7 +13,6 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-// Показ модального окна
 var link = document.querySelector(".week-product__order");
 var overlay = document.querySelector(".page-overlay");
 var popup = document.querySelector(".page-modal");
