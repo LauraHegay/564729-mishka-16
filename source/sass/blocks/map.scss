@@ -41,12 +41,12 @@
 
 @media (min-width: $desktop-width) {
   .map {
+    width: 525px;
+    height: 457px;
+
+    padding: 0;
     background-image: url("../img/map-desktop@1x.jpg");
     background-size: 768px auto;
-  }
-
-  .map img {
-    width: 525px;
   }
 
   .map__iframe {

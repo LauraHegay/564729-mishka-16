@@ -103,10 +103,11 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    @include fix-width-center(1150px);
-    margin-bottom: 124px;
+    @include fix-width-center(1050px);
+    margin-bottom: 108px;
 
-    background-size: 1150px auto;
+    background-position: 26px 0;
+    background-size: 1050px auto;
   }
 
   .contacts__wrapper {
@@ -117,14 +118,14 @@
   }
 
   .contacts__title {
-    padding-top: 158px;
+    padding-top: 163px;
     padding-left: 170px;
 
     font-size: 53px;
     line-height: 57px;
 
     &::after {
-      top: 150px;
+      top: 155px;
       right: 0;
       left: 63px;
     }
@@ -147,7 +148,7 @@
 
   .contacts__map {
     position: absolute;
-    top: 86px;
+    top: 94px;
     left: 525px;
 
     width: 525px;

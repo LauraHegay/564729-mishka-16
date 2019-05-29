@@ -22,12 +22,12 @@
   display: block;
 
   &:hover svg {
-      fill: $color-third-darken;
+    fill: $color-third-darken;
   }
 
   &:focus svg,
   &:active svg {
-      fill: $color-third-lighten;
+    fill: $color-third-lighten;
   }
 
   &--instagram {
@@ -47,7 +47,7 @@
 @media (min-width: $tablet-width) {
   .social {
     margin-top: 60px;
-    margin-bottom: 56px;
+    margin-bottom: 52px;
     margin-right: 56px;
     padding: 0;
 

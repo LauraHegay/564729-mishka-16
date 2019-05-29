@@ -1,6 +1,6 @@
 .popular-product {
   @include fix-width-center();
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 
 .popular-product__list {
@@ -95,8 +95,11 @@
 
 @media (min-width: $tablet-width) {
   .popular-product {
+    position: relative;
+
     @include fix-width-center(668px);
-    margin-top: -56px;
+    margin-top: -120px;
+    z-index: 1;
   }
 
   .popular-product__list {
@@ -140,13 +143,14 @@
 @media (min-width: $desktop-width) {
   .popular-product {
     @include fix-width-center(1050px);
-    margin-top: -129px;
+    margin-top: -120px;
   }
 
   .popular-product__item {
     width: 525px;
 
     a {
+      min-height: 98px;
       padding-right: 312px;
     }
   }

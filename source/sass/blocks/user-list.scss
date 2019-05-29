@@ -14,7 +14,7 @@
   @include font($size: 17px, $color: $black,  $weight: bold);
   text-decoration: none;
 
-  border-bottom: 1px solid $color-secondary;
+  border-bottom: 1px solid $color-divider;
 }
 
 .user-list a[href] {
@@ -80,6 +80,7 @@
     padding-bottom: 32px;
 
     border-left: 1px solid $color-secondary;
+    border-bottom: none;
   }
 
   .user-list__item {
