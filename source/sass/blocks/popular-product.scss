@@ -96,7 +96,7 @@
 @media (min-width: $tablet-width) {
   .popular-product {
     position: relative;
-    
+
     @include fix-width-center(668px);
     margin-top: -120px;
     z-index: 1;

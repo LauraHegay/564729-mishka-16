@@ -24,10 +24,15 @@
   text-align: center;
 }
 
+.page-title__content.page-title__content--grey-background {
+  padding-top: 0;
+}
+
 .page-title.page-title--grey-background {
   min-height: 106px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-top: -1px;
+  margin-bottom: 20px;
   padding: 0;
   padding-top: 70px;
 
@@ -36,7 +41,7 @@
 }
 
 .page-title.page-title--form {
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -74,6 +79,10 @@
     min-height: 230px;
     margin-top: -70px;
     padding-top: 95px;
+  }
+
+  .page-title.page-title--form {
+    margin-bottom: 33px;
   }
 }
 
