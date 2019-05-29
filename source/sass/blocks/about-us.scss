@@ -115,7 +115,7 @@
   .about-us__title {
     padding-top: 65px;
     padding-left: 46px;
-    margin-bottom: 100px;
+    margin-bottom: 103px;
 
     font-size: 43px;
     line-height: 50px;
@@ -167,10 +167,10 @@
 @media (min-width: $desktop-width) {
   .about-us {
     @include fix-width-center ($width: 1050px);
-    margin-bottom: 92px;
+    margin-bottom: 89px;
 
-
-    background-size: 1150px auto;
+    background-position: 26px 0;
+    background-size: 1050px auto;
   }
 
   .about-us__title {

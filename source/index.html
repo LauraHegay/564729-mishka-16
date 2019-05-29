@@ -7,30 +7,30 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <!-- Pixel Glass -->
-<!--    <style>-->
-<!--      HTML {-->
-<!--        background-repeat: no-repeat;-->
-<!--        background-position: 50% 0;-->
-<!--        /* Mobile layout by default */-->
-<!--        background-image: url("img/mishka-index-mobile-opened-menu.jpg");-->
-<!--      }-->
-<!--      /* Tablet */-->
-<!--      @media (min-width: 768px) {-->
-<!--        HTML {-->
-<!--          /* Tablet layout */-->
-<!--          background-image: url("img/mishka-index-tablet.jpg");-->
-<!--        }-->
-<!--      }-->
-<!--      /* Desktop */-->
-<!--      @media (min-width: 1150px) {-->
-<!--        HTML {-->
-<!--          /* Desktop layout */-->
-<!--          background-image: url("img/mishka-index-desktop.jpg");-->
-<!--        }-->
-<!--      }-->
-<!--    </style>-->
-<!--    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">-->
-<!--    <script src="../node_modules/pixel-glass/script.js"></script>-->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        /* Mobile layout by default */
+        background-image: url("img/mishka-index-mobile-opened-menu.jpg");
+      }
+      /* Tablet */
+      @media (min-width: 768px) {
+        HTML {
+          /* Tablet layout */
+          background-image: url("img/mishka-index-tablet.jpg");
+        }
+      }
+      /* Desktop */
+      @media (min-width: 1150px) {
+        HTML {
+         /* Desktop layout */
+            background-image: url("img/mishka-index-desktop.jpg");
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+    <script src="../node_modules/pixel-glass/script.js"></script>
     <!-- // Pixel Glass -->
   </head>
   <body>
@@ -74,7 +74,9 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-title">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
+      <div class="page-title">
+        <h1 class="page-title__content">Милые штуки ручной работы&nbsp;для&nbsp;дома</h1>
+      </div>
       <section class="popular-product">
         <ul class="popular-product__list">
           <li class="popular-product__item popular-product__item--interior"><a href="#">Предметы интерьера</a></li>
@@ -82,38 +84,40 @@
         </ul>
       </section>
       <section class="week-product">
-        <header class="week-product__header">
-          <h2 class="week-product__title">Вязаные&nbsp;корзинки</h2>
-          <p class="week-product__value">Товар недели</p>
-        </header>
         <div class="week-product__wrapper">
-          <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="week-product__characteristic characteristic">
-            <tr>
-              <td class="characteristic__title">Цвет:</td>
-              <td class="characteristic__value">«Тиффани»/серый</td>
-            </tr>
-            <tr>
-              <td class="characteristic__title">Диаметр:</td>
-              <td class="characteristic__value">25 см</td>
-            </tr>
-            <tr>
-              <td class="characteristic__title">Высота:</td>
-              <td class="characteristic__value">15 см</td>
-            </tr>
-          </table>
-          <div class="week-product__image">
-            <picture>
-              <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
-              <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-              <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки" width="260px" height="315px">
-            </picture>
+          <header class="week-product__header">
+            <h2 class="week-product__title">Вязаные&nbsp;корзинки</h2>
+            <p class="week-product__value">Товар недели</p>
+          </header>
+          <div class="week-product__inner-wrapper">
+            <p class="week-product__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <table class="week-product__characteristic characteristic">
+              <tr>
+                <td class="characteristic__title">Цвет:</td>
+                <td class="characteristic__value">«Тиффани»/серый</td>
+              </tr>
+              <tr>
+                <td class="characteristic__title">Диаметр:</td>
+                <td class="characteristic__value">25 см</td>
+              </tr>
+              <tr>
+                <td class="characteristic__title">Высота:</td>
+                <td class="characteristic__value">15 см</td>
+              </tr>
+            </table>
+            <div class="week-product__image">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки" width="260px" height="315px">
+              </picture>
+            </div>
+            <p class="week-product__price">Цена: 990 руб.</p>
+            <button class="week-product__order button" href="#">Заказать</button>
           </div>
-          <p class="week-product__price">Цена: 990 руб.</p>
-          <button class="week-product__order button" href="#">Заказать</button>
         </div>
       </section>
       <section class="about-us">
@@ -179,11 +183,7 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="page-footer__logo-image" src="img/logo-mobile.svg" width="86px" height="35px" alt="Магазин «Мишка»">
-          </picture>
+            <img class="page-footer__logo-image" src="img/logo-footer.svg" width="102px" height="34px" alt="Магазин «Мишка»">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
