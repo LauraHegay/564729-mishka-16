@@ -58,7 +58,6 @@
   }
 
   .page-main__intro__content {
-    margin-left: 0;
-    width: 680px;
+    @include fix-width-center(700px);
   }
 }

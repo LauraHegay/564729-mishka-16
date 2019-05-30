@@ -142,9 +142,9 @@
 @media (min-width: $desktop-width) {
   .how-it-made {
     display: flex;
-    margin-bottom: 0;
 
     @include fix-width-center(1050px);
+    margin-bottom: 101px;
   }
 
   .how-it-made__title {
@@ -173,6 +173,7 @@
     margin: 0;
     padding: 0;
     width: 682px;
+    height: 455px;
 
     &::before {
       top: 190px;

@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <title>Каталог -  Магазин «Мишка»</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+    <script>
+    document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
     <header class="page-header">
@@ -48,7 +54,7 @@
     </nav>
   </header>
     <main class="page-main">
-      <div class="page-title page-title--form page-title--grey-background">
+      <div class="page-title page-title--grey-background">
         <h1 class="page-title__content page-title__content--grey-background">Каталог товаров</h1>
       </div>
       <section class="page-catalog catalog">

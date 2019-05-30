@@ -79,7 +79,6 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
-    border-left: 1px solid $color-secondary;
     border-bottom: none;
   }
 
@@ -88,10 +87,26 @@
   }
 
   .user-list__item .user-list__search {
+    position: relative;
+
     width: 84px;
     padding-left: 0;
     padding-right: 0;
     font-size: 0;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      top: 0;
+      left: 0;
+
+      width: 1px;
+      height: 88px;
+
+      background-color: $color-secondary;
+    }
   }
 
   .user-list__search-icon {
@@ -99,8 +114,24 @@
   }
 
   .user-list__item .user-list__cart {
+    position: relative;
+
     width: 315px;
     padding-left: 82px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      top: 0;
+      left: 0;
+
+      width: 1px;
+      height: 88px;
+
+      background-color: $color-secondary;
+    }
   }
 
   .user-list__cart-icon {
@@ -111,6 +142,9 @@
 
 @media (min-width: $desktop-width) {
   .user-list {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
     order: 3;
     width: 400px;
 

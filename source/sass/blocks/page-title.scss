@@ -1,4 +1,6 @@
 .page-title {
+  display: flex;
+  justify-content: center;
   min-height: 280px;
   margin: 0;
   margin-top: -1px;
@@ -13,28 +15,26 @@
 }
 
 .page-title__content {
-  display: block;
   box-sizing: border-box;
-  padding-top: 70px;
+  width: 320px;
+  padding-top: 50px;
   padding-left: 10px;
   padding-right: 10px;
 
-  @include fix-width-center();
   @include font($size: 27px, $line-height: 30px, $color: $black,  $weight: bold);
   text-align: center;
 }
 
 .page-title__content.page-title__content--grey-background {
-  padding-top: 0;
+  padding: 0;
+  padding-top: 51px;
 }
 
 .page-title.page-title--grey-background {
-  min-height: 106px;
-  margin: 0;
+  min-height: 176px;
   margin-top: -1px;
-  margin-bottom: 20px;
   padding: 0;
-  padding-top: 70px;
+  margin-bottom: 27px;
 
   background-image: none;
   background-color: $color-secondary;
@@ -65,10 +65,8 @@
   }
 
   .page-title__content {
-    @include fix-width-center(768px);
-    padding-right: 0;
-    padding-left: 0;
-    padding-top: 153px;
+    width: 768px;
+    padding-top: 124px;
 
     font-size: 43px;
     line-height: 50px;
@@ -78,7 +76,10 @@
     box-sizing: border-box;
     min-height: 230px;
     margin-top: -70px;
-    padding-top: 95px;
+  }
+
+  .page-title__content.page-title__content--grey-background {
+    padding-top: 66px;
   }
 
   .page-title.page-title--form {
@@ -96,6 +97,8 @@
 @media (min-width: $desktop-width) {
   .page-title {
     min-height: 746px;
+    margin: 0;
+    padding: 0;
     margin-top: -58px;
     background-image: url("../img/hero-desktop@1x.jpg");
     background-size: 1150px auto;
@@ -103,7 +106,8 @@
   }
 
   .page-title__content {
-    @include fix-width-center(1050px);
+    width: 1050px;
+    padding-top: 117px;
 
     font-size: 53px;
     line-height: 57px;
@@ -112,6 +116,10 @@
   .page-title.page-title--grey-background {
     min-height: 255px;
     margin-top: -58px;
+  }
+
+  .page-title__content.page-title__content--grey-background {
+    padding-top: 57px;
   }
 }
 

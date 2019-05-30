@@ -4,8 +4,14 @@
     <meta charset="UTF-8">
     <title>Вязание на заказ -  Магазин «Мишка»</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+    <script>
+    document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
     <header class="page-header">
@@ -22,7 +28,7 @@
         <ul class="main-nav__list user-list">
           <li class="user-list__item"><a class="user-list__search" href="#">
             <svg class="user-list__search-icon" width="17.6px" height="17.6px">
-              <use xlink:href="img/sprite.svg#icon-search"></use>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-search"></use>
             </svg>
             Поиск по сайту
           </a></li>

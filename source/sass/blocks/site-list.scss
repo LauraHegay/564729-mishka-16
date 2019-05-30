@@ -59,6 +59,8 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
+    box-sizing: border-box;
+    margin: 0;
     order: 1;
     width: 300px;
 
@@ -68,16 +70,31 @@
   .site-list a {
     padding-right: 38px;
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 0;
 
     font-size: 17px;
 
     border-bottom: none;
-    border-left: 1px solid $color-secondary;
   }
 
   .site-list__item:nth-child(2) a {
+    position: relative;
+
     padding-left: 34px;
     padding-right: 5px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+
+      top: 0;
+      left: 0;
+
+      width: 1px;
+      height: 88px;
+
+      background-color: $color-secondary;
+    }
   }
 }

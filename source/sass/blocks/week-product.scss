@@ -70,6 +70,9 @@
     position: relative;
 
     @include fix-width-center(768px);
+    margin-top: 19px;
+
+    background-color: $color-main;
   }
 
   .week-product__header {
@@ -125,6 +128,7 @@
 
   .week-product__image {
     position: absolute;
+
     left: 384px;
     top: 163px;
   }
@@ -151,12 +155,14 @@
 
   .week-product__wrapper {
     @include fix-width-center ($width: 1150px);
+    margin-top: 19px;
+    z-index: -2;
   }
 
   .week-product__header {
     flex-direction: row-reverse;
     width: 747px;
-    margin-top: 88px;
+    margin-top: 70px;
   }
 
   .week-product__inner-wrapper {

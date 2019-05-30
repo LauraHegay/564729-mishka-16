@@ -7,7 +7,18 @@
   flex-direction: column;
   margin-bottom: 31px;
 
-  border: 1px solid $color-divider;
+  border: 1px solid $color-secondary-light;
+}
+
+.catalog__wrapper {
+  order: 2;
+  box-sizing: border-box;
+
+  @include fix-width-center(258px);
+  margin-top: -6px;
+  padding-top: 27px;
+  padding-left: 26px;
+  padding-right: 26px;
 
   &:hover {
     box-shadow: 0 6px 6px 2px rgba(0, 0, 0, 0.1);
@@ -17,12 +28,6 @@
   &:active {
     box-shadow: 0 3px 6px 2px rgba(0, 0, 0, 0.1);
   }
-}
-
-.catalog__wrapper {
-  order: 2;
-
-  @include fix-width-center(206px);
 }
 
 .catalog__inner-wrapper {
@@ -44,11 +49,6 @@
 
     background-color: $color-divider;
   }
-}
-
-
-.catalog__image {
-  margin-bottom: 20px;
 }
 
 .catalog__title {
@@ -109,8 +109,8 @@
 
 .catalog__cart-icon {
   position: absolute;
-  top: 28px;
-  left: 31px;
+  top: 16px;
+  left: 185px;
 
   width: 21px;
   height: 19px;
@@ -149,6 +149,7 @@
 
   .catalog__title {
     margin-left: 25px;
+    margin-bottom: 6px;
     padding-top: 25px;
   }
 
@@ -172,13 +173,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-sizing: border-box;
     order: 2;
-    width: 270px;
+    width: 336px;
     margin: 0;
+    padding-top: 0;
+    padding-left: 3px;
   }
 
   .catalog__image {
-    box-sizing: border-box;
     width: 334px;
     height: 334px;
     margin-bottom: 0;
@@ -186,6 +189,7 @@
 
   .catalog__image img {
     width: 334px;
+    height: 334px;
   }
 
   .catalog__inner-wrapper {
@@ -193,7 +197,7 @@
     margin-bottom: 28px;
 
     &::after {
-      top: -21px;
+      top: -22px;
       left: 32px;
 
       width: 268px;
@@ -213,8 +217,8 @@
   }
 
   .catalog__cart-icon {
-    top: 34px;
-    left: 30px;
+    top: 0;
+    left: 280px;
   }
 }
 
@@ -236,6 +240,7 @@
   }
 
   .catalog__item {
+    justify-content: space-between;
     flex-direction: column;
     width: 316px;
     margin: 0;
@@ -249,6 +254,8 @@
   .catalog__wrapper {
     width: 100%;
     min-height: 196px;
+    padding-left: 0;
+    flex-grow: 1;
     border: 1px solid $gray-light;
   }
 
@@ -269,6 +276,10 @@
     padding: 0;
   }
 
+  .catalog__title {
+    padding-top: 23px;
+  }
+
   .catalog__price {
     margin-left: 25px;
   }
@@ -285,5 +296,9 @@
 
   .catalog__add-in-card {
     margin-right: 20px;
+  }
+
+  .catalog__cart-icon {
+    left: 260px;
   }
 }
